@@ -1,0 +1,2 @@
+temporarly do not consider adding the ability of recording time when saving and loading
+and livekeyreader for loaded game
