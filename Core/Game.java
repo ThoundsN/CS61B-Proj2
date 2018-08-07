@@ -317,6 +317,7 @@ public class Game {
             if (potentialInput.equals("L")||potentialInput.equals("l")){
                 CurrentGame loadgame = new CurrentGame();
                 World worldObj = loadgame.loadingGame();
+                ter.initialize(WIDTH,HEIGHT);
                 ter.renderFrame(worldObj.world);
                 StdDraw.pause(100);
                 watch.start();
@@ -329,15 +330,7 @@ public class Game {
             }
         }
     }
-    public void playWithKeyboardAfterLoad(World worldObj) {
-        while (true) {
-            if (StdDraw.hasNextKeyTyped()) {
-                mouseRead(worldObj, watch.TimeRecorder());
-                liveKeyReader(worldObj);
-                worldObj.fatWASDstring = this.fatWASDstring;
-            }
-        }
-    }
+
 
     /**
      * Method used for autograding and testing the game code. The input string will be a series

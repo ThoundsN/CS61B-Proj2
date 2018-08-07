@@ -23,10 +23,10 @@ public class Keyreader extends World{
                     b = worldObj.playerRight();
                 }
                 //Deserialize
-                if (input.equals("L") || input.equals("l")){
-                    CurrentGame loadGame = new CurrentGame();
-                    loadGame.loadingGame();
-                }
+//                if (input.equals("L") || input.equals("l")){
+//                    CurrentGame loadGame = new CurrentGame();
+//                    loadGame.loadingGame();
+//                }
                 //Saving or Serializing
                 if (input.equals("q") || input.equals("Q")){
                     CurrentGame savedgame = new CurrentGame(worldObj);
